@@ -1,8 +1,8 @@
 @inject('UtilityService', 'App\Services\UtilityService')
 @if(Request::segment(2)!='view' )
-@if($UtilityService->getAccessRegReject(Request::segment(1))=='Yes')
+{{-- @if($UtilityService->getAccessRegReject(Request::segment(1))=='Yes')
 <button type="button" id="archive" name="button" value="archive" class="btn btn-danger">Archive File</button>
-@endif
+@endif --}}
 @if($UtilityService->getAccessPubVerify(Request::segment(1))=='Yes')
 @if($form12)
 @if($form12->current_stage=='Publication verify')
